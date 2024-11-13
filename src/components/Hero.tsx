@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex flex-row justify-between w-full flex-wrap items-center pt-10 px-16">
-      <div className="size-full max-w-2xl items-center justify-center overflow-hidden pt-8">
+    <div className="flex flex-row justify-between size-full flex-wrap items-center pt-20 pb-10 px-16 gap-2">
+      <div className="w-full md:max-w-min md:w-1/2 items-center justify-center overflow-hidden pt-8">
         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-          <p className="text-[7rem] font-semibold">
+          <p className="text-[2rem] sm:text-[4rem] md:text-[3rem] lg:text-[4.8rem] xl:text-[6rem] font-semibold">
             FRONT-END DEVELOPER<span className="text-[#5046e6]">.</span>
           </p>
         </BoxReveal>
@@ -27,15 +27,16 @@ const Hero = () => {
         </BoxReveal> */}
       </div>
 
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+      <div className="hidden md:block h-4/6 lg:h-5/6 w-5/12 relative">
         <Image
-          className="rounded-2xl"
+          className="rounded-2xl object-cover"
           src="/profile.jpg"
-          width={490}
-          height={490}
+          fill
+          sizes="(max-width: 767px) 0vw,33vw"
+          priority
           alt="Picture of the author"
         />
-      </BoxReveal>
+      </div>
     </div>
   );
 };
