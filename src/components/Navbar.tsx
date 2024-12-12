@@ -1,23 +1,23 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import Link from "next/link";
+} from '@/components/ui/navigation-menu';
+import Link from 'next/link';
 import {
   SheetTrigger,
   SheetContent,
   SheetHeader,
   Sheet,
   SheetTitle,
-} from "./ui/sheet";
-import { Button } from "./ui/button";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+} from './ui/sheet';
+import { Button } from './ui/button';
+import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,19 +25,20 @@ const Navbar = () => {
   const handleToggle = () => setIsOpen(!isOpen);
 
   const menuItems = [
-    { title: "STORY", path: "/your-path" },
-    { title: "EXPERIENCE", path: "/your-path" },
-    { title: "SKILLS", path: "/your-path" },
-    { title: "PROJECTS", path: "/your-path" },
+    { title: 'STORY', path: '/your-path' },
+    { title: 'EXPERIENCE', path: '/your-path' },
+    { title: 'SKILLS', path: '/your-path' },
+    { title: 'PROJECTS', path: '/your-path' },
   ];
 
   return (
     <>
-      <NavigationMenu className="absolute top-0 max-w-none w-full bg-transparent px-12 py-4 flex justify-between">
+      <NavigationMenu className="absolute top-0 max-w-none w-full bg-transparent px-5 md:px-12 py-4 flex justify-between">
         <p className="font-bold">
-          <span className="text-[#5046e6]">FAISAL</span>
+          {'< '} <span className="text-[#5046e6]">{'FAISAL'}</span>
           <br />
           PRADY
+          <span className="text-[#5046e6]">{'/>'}</span>
         </p>
         <NavigationMenuList className="hidden md:flex">
           {menuItems.map((item, i) => (
