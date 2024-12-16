@@ -19,7 +19,7 @@ const Section: React.FC<SectionProps> = ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: isDarkMode ? '#1a1a1a' : '#fbfbfe',
+    backgroundColor: isDarkMode ? '#232121' : '#fbfbfe',
     color: isDarkMode ? '#ffffff' : '#000000',
     paddingTop: isFullHeight ? '0' : '2rem',
     paddingBottom: isFullHeight ? '0' : '2rem',

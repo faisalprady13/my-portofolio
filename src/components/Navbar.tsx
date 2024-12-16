@@ -38,7 +38,7 @@ const Navbar = () => {
           {'< '} <span className="text-[#5046e6]">{'FAISAL'}</span>
           <br />
           PRADY
-          <span className="text-[#5046e6]">{'/>'}</span>
+          <span className="text-[#5046e6]">{' />'}</span>
         </p>
         <NavigationMenuList className="hidden md:flex">
           {menuItems.map((item, i) => (

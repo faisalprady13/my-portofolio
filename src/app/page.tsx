@@ -13,7 +13,7 @@ export default function Home() {
       <Section isDarkMode isFullWidth>
         <Skills />
       </Section>
-      <Section isDarkMode isFullWidth>
+      <Section isFullWidth>
         <Timeline entries={timelineEntries} />
       </Section>
     </div>

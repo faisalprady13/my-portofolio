@@ -10,11 +10,10 @@ export const timelineEntries: TimelineEntry[] = [
     type: TimelineType.WORK,
   },
   {
-    title: 'PHP Developer / IT Support (Working Student)',
+    title: 'Frontend Developer (Working Student)',
     organization: 'Heaven HR GmbH',
     date: '03/2019 - 03/2020',
-    description:
-      'Develop back-office services for internal use with PHP and setup time tracking terminal',
+    description: 'Develop and build frontend components using React.js.',
     type: TimelineType.WORK,
   },
   {
@@ -22,7 +21,7 @@ export const timelineEntries: TimelineEntry[] = [
     organization: 'Vonderlabs UG',
     date: '03/2018 - 08/2018',
     description:
-      'First work experience in IT industry, develop and testing a VR app as an XR Engineer.',
+      'First work experience in IT industry, develop and testing a VR & AR app as an XR Engineer.',
     type: TimelineType.WORK,
   },
   {
