@@ -1,7 +1,9 @@
-export type skillAreaEntry = {
+export type SkillAreaEntry = {
   title: string;
   color: number;
-  skillList: skillEntry[];
+  skillList: SkillEntry[];
 };
 
-export type skillEntry = { name: string; level: number };
+export type SkillEntry = { name: string; level: number };
+
+export type SkillImage = { alt: string; src: string };

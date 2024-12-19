@@ -19,7 +19,7 @@ const Section: React.FC<SectionProps> = ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: isDarkMode ? '#232121' : '#fbfbfe',
+    backgroundColor: isDarkMode ? '#232121' : '#eeeeee',
     color: isDarkMode ? '#ffffff' : '#000000',
     paddingTop: isFullHeight ? '0' : '2rem',
     paddingBottom: isFullHeight ? '0' : '2rem',
@@ -27,7 +27,11 @@ const Section: React.FC<SectionProps> = ({
     paddingRight: isFullWidth ? '0' : '2rem',
   };
 
-  return <div style={sectionStyle}>{children}</div>;
+  return (
+    <div style={sectionStyle} className="relative">
+      {children}
+    </div>
+  );
 };
 
 export default Section;

@@ -2,6 +2,7 @@ import Hero from '@/components/hero';
 import Section from '@/components/section';
 import Skills from '@/components/skills';
 import Timeline from '@/components/timeline';
+import { skillImages } from '@/data/skillsData';
 import { timelineEntries } from '@/data/timelineData';
 
 export default function Home() {
@@ -10,11 +11,11 @@ export default function Home() {
       <Section isFullWidth isFullHeight>
         <Hero />
       </Section>
-      <Section isDarkMode isFullWidth>
-        <Skills />
+      <Section isFullWidth isDarkMode>
+        <Timeline entries={timelineEntries} />
       </Section>
       <Section isFullWidth>
-        <Timeline entries={timelineEntries} />
+        <Skills skillImages={skillImages} />
       </Section>
     </div>
   );

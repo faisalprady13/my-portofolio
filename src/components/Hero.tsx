@@ -21,6 +21,8 @@ const Hero = () => {
             I'm <span className="text-[#5046e6]"> Faisal</span>, a frontend
             developer specializing in crafting responsive and user-friendly
             websites to your needs.
+            {/* My experience ranges from a simple static app to a complex
+            single page application. */}
           </p>
         </BoxReveal>
 
@@ -28,14 +30,14 @@ const Hero = () => {
           <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button>
         </BoxReveal> */}
       </div>
-
       <div className="hidden md:block h-4/6 lg:h-5/6 w-5/12 relative">
         <Image
           className="rounded-2xl object-cover"
-          src="/profile.jpg"
+          src="/images/profile.png"
           fill
           sizes="(max-width: 767px) 0vw,33vw"
-          priority
+          placeholder="blur"
+          blurDataURL={'/images/profile.png'}
           alt="Picture of the author"
         />
       </div>
