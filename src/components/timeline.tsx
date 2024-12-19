@@ -22,6 +22,7 @@ export default function Timeline({ entries }: { entries: TimelineEntry[] }) {
         {entries.map((entry, index) => (
           <BlurFade key={index} delay={0.25 + index * 0.05} inView>
             <div
+              key={index}
               className={`flex flex-col md:flex-row ${
                 index % 2 === 0 ? 'md:flex-row-reverse' : ''
               } gap-8 mb-8`}

@@ -1,4 +1,6 @@
 import React from 'react';
+import DotPattern from './ui/dot-pattern';
+import { cn } from '@/lib/utils';
 
 interface SectionProps {
   isDarkMode?: boolean;
@@ -29,7 +31,12 @@ const Section: React.FC<SectionProps> = ({
 
   return (
     <div style={sectionStyle} className="relative">
-      {children}
+      <DotPattern
+        className={cn(
+          '[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]'
+        )}
+      />
+      <div className="z-10 size-full">{children}</div>
     </div>
   );
 };

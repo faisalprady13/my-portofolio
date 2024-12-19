@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="flex flex-row justify-between size-full flex-wrap items-center pt-20 pb-10 px-6 md:px-16 gap-2">
+    <div className="flex flex-row justify-evenly size-full flex-wrap items-center pt-20 pb-10 px-6 md:px-16 gap-2">
       <div className="w-full md:max-w-min md:w-1/2 items-center justify-center overflow-hidden pt-8">
         <BoxReveal boxColor={'#5046e6'} duration={0.5}>
           <p className="text-[2rem] sm:text-[4rem] md:text-[3rem] lg:text-[4.8rem] xl:text-[6rem] font-semibold">
@@ -18,7 +18,7 @@ const Hero = () => {
             Welcome to my portfolio!
             <br />
             <br />
-            I'm <span className="text-[#5046e6]"> Faisal</span>, a frontend
+            I&apos;m <span className="text-[#5046e6]"> Faisal</span>, a frontend
             developer specializing in crafting responsive and user-friendly
             websites to your needs.
             {/* My experience ranges from a simple static app to a complex

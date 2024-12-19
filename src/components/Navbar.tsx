@@ -9,13 +9,7 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import Link from 'next/link';
-import {
-  SheetTrigger,
-  SheetContent,
-  SheetHeader,
-  Sheet,
-  SheetTitle,
-} from './ui/sheet';
+import { SheetTrigger, SheetContent, Sheet, SheetTitle } from './ui/sheet';
 import { Button } from './ui/button';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 
