@@ -27,18 +27,20 @@ const Navbar = () => {
 
   return (
     <>
-      <NavigationMenu className="absolute top-0 max-w-none w-full bg-transparent px-5 md:px-12 py-4 flex justify-between">
+      <NavigationMenu className="text-primary-foreground absolute z-20 top-0 max-w-none w-full bg-transparent px-5 md:px-12 py-4 flex justify-between">
         <p className="font-bold">
-          {'< '} <span className="text-[#5046e6]">{'FAISAL'}</span>
+          {'< '} <span className="text-primary">{'FAISAL'}</span>
           <br />
           PRADY
-          <span className="text-[#5046e6]">{' />'}</span>
+          <span className="text-primary">{' />'}</span>
         </p>
         <NavigationMenuList className="hidden md:flex">
           {menuItems.map((item, i) => (
             <NavigationMenuItem key={i}>
               <Link href={item.path} legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink
+                  className={`${navigationMenuTriggerStyle()} bg-transparent`}
+                >
                   {item.title}
                 </NavigationMenuLink>
               </Link>
