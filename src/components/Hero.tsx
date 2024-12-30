@@ -3,12 +3,12 @@ import BoxReveal from './ui/box-reveal';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-center size-full flex-wrap items-center pt-20 pb-10 px-6 md:px-16">
+    <div className="flex flex-col justify-center h-full max-w-5xl gap-4 flex-wrap items-center pt-20 pb-10 px-4 m-auto text-center">
       <BoxReveal boxColor={'#5046e6'} duration={0.5}>
         <p className="mt-[.5rem] text-xl">I am</p>
       </BoxReveal>
       <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-        <p className="text-[2rem] sm:text-[4rem] md:text-[2rem] lg:text-[3.8rem] xl:text-6xl font-semibold">
+        <p className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-6xl font-semibold">
           Muhammad <span className="text-primary"> Faisal </span>
           Ibnu Prady
           {/* <span className="text-primary">.</span> */}
@@ -16,15 +16,15 @@ const Hero = () => {
       </BoxReveal>
 
       <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-        <p className="mt-[.5rem] text-[1rem]">
-          Welcome to my portfolio!
+        <p className="text-lg">
+          Berlin based Fullstack Developer.
+          <br />I create websites, software, and solutions that make your
+          business thrive!
+          {/* specializing in crafting responsive and user-friendly websites
+          to your needs.
           <br />
-          <br />
-          I&apos;m <span className="text-primary"> Faisal</span>, a frontend
-          developer specializing in crafting responsive and user-friendly
-          websites to your needs.
-          {/* My experience ranges from a simple static app to a complex
-            single page application. */}
+          My experience ranges from a simple static webpage to a complex single
+          page application. */}
         </p>
       </BoxReveal>
 
@@ -38,7 +38,6 @@ const Hero = () => {
           fill
           sizes="(max-width: 767px) 0vw,33vw"
           placeholder="blur"
-          blurDataURL={'/images/profile.png'}
           alt="Picture of the author"
         />
       </div> */}

@@ -1,6 +1,7 @@
 import Hero from '@/components/hero';
 import Section, { backgroundType } from '@/components/section';
 import Skills from '@/components/skills';
+import Story from '@/components/story';
 import Timeline from '@/components/timeline';
 import { skillImages } from '@/data/skillsData';
 import { timelineEntries } from '@/data/timelineData';
@@ -15,6 +16,9 @@ export default function Home() {
         background={backgroundType.IMAGE}
       >
         <Hero />
+      </Section>
+      <Section isFullWidth isDarkMode background={backgroundType.GRAY}>
+        <Story />
       </Section>
       <Section isFullWidth isDarkMode background={backgroundType.DOTS}>
         <Timeline entries={timelineEntries} />

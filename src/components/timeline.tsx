@@ -9,7 +9,7 @@ import BlurFade from './ui/blur-fade';
 
 export default function Timeline({ entries }: { entries: TimelineEntry[] }) {
   return (
-    <div className="py-12">
+    <div className="py-12 px-4">
       <div className="text-center font-bold text-lg pb-14">
         MY EXPERIENCE & EDUCATION
       </div>
