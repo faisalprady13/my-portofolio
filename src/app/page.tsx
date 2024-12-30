@@ -1,4 +1,5 @@
 import Hero from '@/components/hero';
+import Projects from '@/components/projects';
 import Section, { backgroundType } from '@/components/section';
 import Skills from '@/components/skills';
 import Story from '@/components/story';
@@ -17,14 +18,27 @@ export default function Home() {
       >
         <Hero />
       </Section>
-      <Section isFullWidth isDarkMode background={backgroundType.GRAY}>
+      <Section
+        isFullWidth
+        isDarkMode
+        background={backgroundType.GRAY}
+        id="story"
+      >
         <Story />
       </Section>
-      <Section isFullWidth isDarkMode background={backgroundType.DOTS}>
+      <Section
+        isFullWidth
+        isDarkMode
+        background={backgroundType.DOTS}
+        id="timeline"
+      >
         <Timeline entries={timelineEntries} />
       </Section>
-      <Section isFullWidth background={backgroundType.DOTS}>
+      <Section isFullWidth background={backgroundType.DOTS} id="skills">
         <Skills skillImages={skillImages} />
+      </Section>
+      <Section isFullWidth background={backgroundType.DOTS} id="projects">
+        <Projects />
       </Section>
     </div>
   );

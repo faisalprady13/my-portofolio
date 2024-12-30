@@ -5,7 +5,7 @@ import me from '../../public/images/me.png';
 
 const Story = () => {
   return (
-    <div className="flex flex-row justify-evenly size-full items-start py-12 px-6 md:px-16 gap-20 max-w-4xl mx-auto  py-12">
+    <div className="flex flex-row justify-evenly size-full items-start py-12 px-6 md:px-16 gap-20 max-w-4xl mx-auto py-12">
       <div className="hidden md:block w-1/4  relative">
         <Image
           className="rounded-full object-cover mt-12"
@@ -18,7 +18,7 @@ const Story = () => {
       </div>
       <div className="w-full md:max-w-full md:w-3/4 items-center justify-center overflow-hidden pt-8 ">
         <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-          <p className="mt-[.5rem] text-[1rem]">
+          <p className="text-base">
             Greetings, I&apos;m Faisal! Welcome to my portfolio!
             <br />
             <br />I have been a

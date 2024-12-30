@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col justify-center h-full max-w-5xl gap-4 flex-wrap items-center pt-20 pb-10 px-4 m-auto text-center">
       <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-        <p className="mt-[.5rem] text-xl">I am</p>
+        <p className="text-xl">I am</p>
       </BoxReveal>
       <BoxReveal boxColor={'#5046e6'} duration={0.5}>
         <p className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl xl:text-6xl font-semibold">

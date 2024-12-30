@@ -10,7 +10,7 @@ import BlurFade from './ui/blur-fade';
 export default function Timeline({ entries }: { entries: TimelineEntry[] }) {
   return (
     <div className="py-12 px-4">
-      <div className="text-center font-bold text-lg pb-14">
+      <div className="text-center font-bold text-lg mb-14">
         MY EXPERIENCE & EDUCATION
       </div>
       <div className="relative max-w-4xl mx-auto p-4">
@@ -45,7 +45,7 @@ export default function Timeline({ entries }: { entries: TimelineEntry[] }) {
                   <CardTitle className="text-lg font-semibold">
                     {entry.organization}
                   </CardTitle>
-                  <p className="italic">{entry.title}</p>
+                  <p className="italic text-base">{entry.title}</p>
                   <p className="text-sm text-muted-foreground">{entry.date}</p>
                 </CardHeader>
                 <CardContent>

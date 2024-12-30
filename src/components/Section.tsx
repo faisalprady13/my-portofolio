@@ -11,6 +11,7 @@ interface SectionProps {
   isFullHeight?: boolean;
   background?: backgroundType;
   children: React.ReactNode;
+  id?: string;
 }
 
 export enum backgroundType {
@@ -73,6 +74,7 @@ const Section: React.FC<SectionProps> = ({
   isFullHeight = false,
   background = backgroundType.NONE,
   children,
+  id,
 }) => {
   const sectionStyle: React.CSSProperties = {
     width: isFullWidth ? '100vw' : 'auto',
@@ -89,7 +91,7 @@ const Section: React.FC<SectionProps> = ({
   };
 
   return (
-    <div style={sectionStyle} className="relative">
+    <div style={sectionStyle} className="relative" id={id}>
       {activeBackground(background)}
       <div className="z-10 size-full">{children}</div>
     </div>
