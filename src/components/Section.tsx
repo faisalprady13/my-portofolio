@@ -20,6 +20,7 @@ export enum backgroundType {
   GRID,
   IMAGE,
   GRAY,
+  WHITE,
 }
 
 const activeBackground = (background: backgroundType) => {
@@ -28,7 +29,7 @@ const activeBackground = (background: backgroundType) => {
       return (
         <DotPattern
           className={cn(
-            '[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]'
+            '[mask-image:radial-gradient(700px_circle_at_center,white,transparent)]'
           )}
         />
       );
@@ -55,7 +56,6 @@ const activeBackground = (background: backgroundType) => {
             alt="hero image"
             fill
             quality={100}
-            priority
             className="z-0 object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
@@ -63,6 +63,8 @@ const activeBackground = (background: backgroundType) => {
       );
     case backgroundType.GRAY:
       return <div className="absolute w-full h-full bg-neutral-900 z-10" />;
+    case backgroundType.WHITE:
+      return <div className="absolute w-full h-full bg-neutral-100 z-10" />;
     default:
       return <></>;
   }

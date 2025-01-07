@@ -64,7 +64,7 @@ const Navbar = () => {
             <SheetContent
               side="left"
               className="bg-neutral-900 text-white"
-              onClick={() => {
+              handleOverlayClick={() => {
                 setIsOpen(false);
               }}
             >

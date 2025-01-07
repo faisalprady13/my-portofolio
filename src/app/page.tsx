@@ -4,8 +4,9 @@ import Section, { backgroundType } from '@/components/section';
 import Skills from '@/components/skills';
 import Story from '@/components/story';
 import Timeline from '@/components/timeline';
-import { skillImages } from '@/data/skillsData';
-import { timelineEntries } from '@/data/timelineData';
+import { skillData } from '@/data/skillData';
+import { timelineData } from '@/data/timelineData';
+import { projectData } from '@/data/projectData';
 
 export default function Home() {
   return (
@@ -32,13 +33,13 @@ export default function Home() {
         background={backgroundType.DOTS}
         id="timeline"
       >
-        <Timeline entries={timelineEntries} />
+        <Timeline timelineEntries={timelineData} />
       </Section>
       <Section isFullWidth background={backgroundType.DOTS} id="skills">
-        <Skills skillImages={skillImages} />
+        <Skills skillEntries={skillData} />
       </Section>
-      <Section isFullWidth background={backgroundType.DOTS} id="projects">
-        <Projects />
+      <Section isFullWidth background={backgroundType.GRAY} id="projects">
+        <Projects projectEntries={projectData} />
       </Section>
     </div>
   );

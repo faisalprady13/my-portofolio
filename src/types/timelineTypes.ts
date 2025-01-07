@@ -1,6 +1,6 @@
 export enum TimelineType {
-  WORK = 'work',
-  EDUCATION = 'education',
+  WORK,
+  EDUCATION,
 }
 
 export type TimelineEntry = {

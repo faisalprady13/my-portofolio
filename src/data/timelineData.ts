@@ -1,6 +1,6 @@
 import { TimelineEntry, TimelineType } from '@/types/timelineTypes';
 
-export const timelineEntries: TimelineEntry[] = [
+export const timelineData: TimelineEntry[] = [
   {
     title: 'Full Stack Web Developer',
     organization: 'Gravity and Storm GmbH',

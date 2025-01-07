@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import * as SheetPrimitive from '@radix-ui/react-dialog';
+import * as VisuallyHidden from '@radix-ui/react-visually-hidden';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
-import { Cross2Icon } from '@radix-ui/react-icons';
 
 const Sheet = SheetPrimitive.Root;
 
@@ -50,28 +50,37 @@ const sheetVariants = cva(
 
 interface SheetContentProps
   extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
-    VariantProps<typeof sheetVariants> {}
+    VariantProps<typeof sheetVariants> {
+  handleOverlayClick: () => void;
+}
 
 const SheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
   SheetContentProps
->(({ side = 'top', className, children, onClick, ...props }, ref) => (
-  <SheetPortal>
-    <SheetOverlay onClick={() => onClick()} />
-    <SheetPrimitive.Content
-      ref={ref}
-      className={cn(sheetVariants({ side }), className)}
-      {...props}
-      onCloseAutoFocus={(event) => event.preventDefault()}
-    >
-      {/* <SheetPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <Cross2Icon className="h-4 w-4" />
-        <span className="sr-only">Close</span>
-      </SheetPrimitive.Close> */}
-      {children}
-    </SheetPrimitive.Content>
-  </SheetPortal>
-));
+>(
+  (
+    { side = 'top', className, children, handleOverlayClick, ...props },
+    ref
+  ) => (
+    <SheetPortal>
+      <SheetOverlay onClick={() => handleOverlayClick()} />
+      <SheetPrimitive.Content
+        ref={ref}
+        className={cn(sheetVariants({ side }), className)}
+        {...props}
+        onCloseAutoFocus={(event) => event.preventDefault()}
+      >
+        <VisuallyHidden.Root>
+          <SheetTitle>Sheet Content</SheetTitle>
+          <SheetDescription>
+            This is a hidden description for screen readers.
+          </SheetDescription>
+        </VisuallyHidden.Root>
+        {children}
+      </SheetPrimitive.Content>
+    </SheetPortal>
+  )
+);
 SheetContent.displayName = SheetPrimitive.Content.displayName;
 
 const SheetHeader = ({
@@ -120,7 +129,7 @@ const SheetDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Description
     ref={ref}
-    className={cn('text-sm text-muted-foreground', className)}
+    className={cn('text-base text-muted-foreground', className)}
     {...props}
   />
 ));
