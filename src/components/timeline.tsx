@@ -55,7 +55,7 @@ export default function Timeline({
                   </p>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-base">{entry.description}</p>
+                  <p className="text-base ">{entry.description}</p>
                 </CardContent>
               </Card>
             </div>

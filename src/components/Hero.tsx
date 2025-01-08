@@ -16,7 +16,7 @@ const Hero = () => {
       </BoxReveal>
 
       <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-        <p className="text-lg">
+        <p className="text-lg  tracking-wide">
           Berlin based Fullstack Developer.
           <br />I create websites, software, and solutions that make your
           business thrive!

@@ -6,7 +6,7 @@ export const timelineData: TimelineEntry[] = [
     organization: 'Gravity and Storm GmbH',
     date: '09/2020 - 06/2024',
     description:
-      'A full stack web developer in a Digital Agency, building various products from a complex SPA to fullstack web application.',
+      'Fullstack web developer in a Digital Agency, building various products from a complex SPAs to fullstack web applications.',
     type: TimelineType.WORK,
   },
   {

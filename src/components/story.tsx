@@ -5,7 +5,7 @@ import me from '../../public/images/me.png';
 
 const Story = () => {
   return (
-    <div className="flex flex-row justify-evenly size-full items-start py-12 px-6 md:px-16 gap-20 max-w-4xl mx-auto py-12">
+    <div className="leading-7 flex flex-row justify-evenly size-full items-start py-12 px-6 md:px-16 gap-20 max-w-4xl mx-auto py-12">
       <div className="hidden md:block w-1/4  relative">
         <Image
           className="rounded-full object-cover mt-12"
@@ -16,12 +16,11 @@ const Story = () => {
           alt="Picture of the author"
         />
       </div>
-      <div className="w-full md:max-w-full md:w-3/4 items-center justify-center overflow-hidden pt-8 ">
+      <div className="w-full md:max-w-full md:w-3/4 items-center justify-center overflow-hidden pt-8 tracking-wide">
+        <p className="text-2xl font-bold mb-6">About Me</p>
         <BoxReveal boxColor={'#5046e6'} duration={0.5}>
           <p className="text-base">
-            Greetings, I&apos;m Faisal! Welcome to my portfolio!
-            <br />
-            <br />I have been a
+            Greetings, I&apos;m Faisal! I have been a
             <span className="text-primary">{` Fullstack Developer `}</span>
             for nearly <span className="text-primary">{` 4 years `}</span>and
             have worked on multiple projects in various industries. I earned by
@@ -35,6 +34,12 @@ const Story = () => {
             with complex business logic.
           </p>
         </BoxReveal>
+
+        <p className="text-2xl font-bold mt-10 mb-6">Contact Details</p>
+        <p>Muhammad Faisal Ibnu Prady</p>
+        <p>Berlin, Germany</p>
+        <br />
+        <p>faisalprady@gmail.com</p>
       </div>
     </div>
   );
