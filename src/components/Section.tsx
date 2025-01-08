@@ -1,7 +1,6 @@
 import React from 'react';
 import DotPattern from './ui/dot-pattern';
 import { cn } from '@/lib/utils';
-import AnimatedGridPattern from './ui/animated-grid-pattern';
 import Image from 'next/image';
 import backgroundImage from '../../public/images/hero-background.jpg';
 
@@ -29,25 +28,10 @@ const activeBackground = (background: backgroundType) => {
       return (
         <DotPattern
           className={cn(
-            '[mask-image:radial-gradient(700px_circle_at_center,white,transparent)]'
+            '[mask-image:radial-gradient(800px_circle_at_center,white,transparent)]'
           )}
         />
       );
-    case backgroundType.GRID:
-      return (
-        <AnimatedGridPattern
-          numSquares={40}
-          maxOpacity={0.1}
-          duration={3}
-          repeatDelay={0.5}
-          className={cn(
-            // '[mask-image:radial-gradient(600px_circle_at_center,white,transparent)]',
-            'inset-x-0 inset-y-[-30%] h-[200%] skew-y-[-4deg]',
-            'top-[-50vh]'
-          )}
-        />
-      );
-
     case backgroundType.IMAGE:
       return (
         <>

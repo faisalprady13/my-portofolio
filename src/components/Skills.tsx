@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Skills = ({ skillEntries }: { skillEntries: SkillImage[] }) => {
   return (
     <div className="py-12">
-      <p className="text-center font-bold text-lg mb-14 px-6">
+      <p className="text-center font-bold text-lg mb-14 px-8">
         I HAVE EXPERIENCE WITH THIS TECHNOLOGIES
       </p>
       <div className="flex flex-wrap justify-between w-screen gap-4 md:gap-12 max-w-4xl mx-auto py-4 px-6">

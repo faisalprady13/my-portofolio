@@ -12,13 +12,13 @@ import Link from 'next/link';
 import { SheetTrigger, SheetContent, Sheet, SheetTitle } from './ui/sheet';
 import { Button } from './ui/button';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
-import { useRouter } from 'next/navigation';
 
 const menuItems = [
   { title: 'STORY', path: '#story' },
   { title: 'TIMELINE', path: '#timeline' },
   { title: 'SKILLS', path: '#skills' },
   { title: 'PROJECTS', path: '#projects' },
+  { title: 'CONTACTS', path: '#contacts' },
 ];
 
 const Navbar = () => {
