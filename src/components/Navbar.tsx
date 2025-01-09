@@ -31,14 +31,14 @@ const Navbar = () => {
   return (
     <>
       <NavigationMenu className="select-none text-primary-foreground absolute z-20 top-0 max-w-none w-full bg-transparent px-5 md:px-12 py-4 flex justify-between">
-        {/* <Link href="/" legacyBehavior passHref> */}
-        <p className="font-bold cursor-pointer">
-          {'< '} <span className="text-primary">{'FAISAL'}</span>
-          <br />
-          PRADY
-          <span className="text-primary">{' />'}</span>
-        </p>
-        {/* </Link> */}
+        <Link href="/">
+          <p className="font-bold cursor-pointer">
+            {'< '} <span className="text-primary">{'FAISAL'}</span>
+            <br />
+            PRADY
+            <span className="text-primary">{' />'}</span>
+          </p>
+        </Link>
         <NavigationMenuList className="hidden md:flex">
           {menuItems.map((item, i) => (
             <NavigationMenuItem key={i}>

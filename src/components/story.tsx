@@ -5,7 +5,7 @@ import me from '../../public/images/me.png';
 
 const Story = () => {
   return (
-    <div className="leading-7 flex flex-row justify-evenly size-full items-start py-12 px-8 md:px-16 gap-20 max-w-4xl mx-auto py-12">
+    <div className="leading-7 flex flex-row justify-evenly size-full items-start py-12 px-8 md:px-12 gap-20 max-w-4xl mx-auto">
       <div className="hidden md:block w-1/4  relative">
         <Image
           className="rounded-full object-cover mt-12"
@@ -17,7 +17,7 @@ const Story = () => {
         />
       </div>
       <BoxReveal boxColor={'#5046e6'} duration={0.5}>
-        <div className="w-full md:max-w-full md:w-3/4 items-center justify-center overflow-hidden pt-8 tracking-wide">
+        <div className="w-full md:max-w-full  items-center justify-center overflow-hidden pt-8 tracking-wide">
           <p className="text-2xl font-bold mb-6">About Me</p>
           <p className="text-base">
             Greetings, I&apos;m Faisal! I have been a

@@ -25,6 +25,7 @@ const Projects = ({ projectEntries }: { projectEntries: ProjectEntry[] }) => {
                     height={0}
                     sizes="200px"
                     className="w-auto h-auto"
+                    loading="lazy"
                   ></Image>
                 </div>
                 <div className="flex flex-col md:w-7/12">

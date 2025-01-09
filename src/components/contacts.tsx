@@ -11,11 +11,23 @@ const Contacts = () => {
           <a href="mailto:faisalprady@gmail.com" className={buttonStyle}>
             E-mail
           </a>
-          <a className={buttonStyle}>LinkedIn</a>
-          <a className={buttonStyle}>Github</a>
+          <a
+            href="https://www.linkedin.com/in/faisalprady/"
+            className={buttonStyle}
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/faisalprady13"
+            className={buttonStyle}
+            target="_blank"
+          >
+            Github
+          </a>
         </div>
       </div>
-      <div className="flex justify-between gap-4 px-12 text-xs">
+      <div className="flex justify-between gap-4 px-12 text-xs" target="_blank">
         <div>© Muhammad Faisal Ibnu Prady {new Date().getFullYear()}</div>
         <div>faisalpady@gmail.com</div>
       </div>
