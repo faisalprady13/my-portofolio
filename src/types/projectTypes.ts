@@ -5,4 +5,5 @@ export type ProjectEntry = {
   image: string;
   role: string;
   extraDesc: string;
+  url?: string;
 };

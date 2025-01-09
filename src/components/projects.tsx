@@ -41,7 +41,7 @@ const Projects = ({ projectEntries }: { projectEntries: ProjectEntry[] }) => {
                   </p>
 
                   <p className="text-sm mb-6">{project.description}</p>
-                  <div className="flex flex-wrap gap-1">
+                  <div className="flex flex-wrap gap-1 mb-6">
                     {project.techStack.map((tech, i) => (
                       <div
                         key={i}
@@ -51,6 +51,15 @@ const Projects = ({ projectEntries }: { projectEntries: ProjectEntry[] }) => {
                       </div>
                     ))}
                   </div>
+                  {project?.url && (
+                    <div className="flex justify-start md:justify-end mr-2 hover:underline">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        className="text-sm cursor-pointer"
+                      >{`To Website >>`}</a>
+                    </div>
+                  )}
                 </div>
               </CardContent>
             </Card>
