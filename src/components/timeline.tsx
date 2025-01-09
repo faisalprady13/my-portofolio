@@ -13,7 +13,7 @@ export default function Timeline({
   timelineEntries: TimelineEntry[];
 }) {
   return (
-    <div className="py-12 px-4">
+    <div className="py-16 px-4">
       <p className="text-center font-bold text-lg mb-14">
         MY EXPERIENCE & EDUCATION
       </p>
