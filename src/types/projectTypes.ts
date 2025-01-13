@@ -6,4 +6,5 @@ export type ProjectEntry = {
   role: string;
   extraDesc: string;
   url?: string;
+  fullImage?: boolean;
 };

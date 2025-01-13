@@ -17,14 +17,20 @@ const Projects = ({ projectEntries }: { projectEntries: ProjectEntry[] }) => {
               <CardContent
                 className={`p-8 md:p-12 flex flex-col md:flex-row justify-between`}
               >
-                <div className="bg-white rounded-xl shadow md:w-4/12 flex justify-center align-center p-2 items-center mb-8 md:mb-0">
+                <div
+                  className={`relative bg-white rounded-xl md:w-4/12 flex justify-center align-center ${
+                    project.fullImage ? 'p-0' : 'p-2 shadow'
+                  } items-center mb-8 md:mb-0`}
+                >
                   <Image
                     src={project.image}
                     alt={project.title}
                     width={0}
                     height={0}
-                    sizes="200px"
-                    className="w-auto h-auto"
+                    sizes="300px"
+                    className={`w-auto h-auto object-cover ${
+                      project.fullImage ? 'rounded-xl shadow' : ''
+                    } `}
                     loading="lazy"
                   ></Image>
                 </div>

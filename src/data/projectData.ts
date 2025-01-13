@@ -2,6 +2,17 @@ import { ProjectEntry } from '@/types/projectTypes';
 
 export const projectData: ProjectEntry[] = [
   {
+    title: 'Portfolio Website',
+    description:
+      'Server side rendered personal portfolio, built using the latest version of NextJS and Shadcn/ui to showcase my skills and experience. The website has wonderful animation without costing the performance of the website.',
+    extraDesc: 'Personal project',
+    role: 'Frontend Developer',
+    image: '/images/portfolio.png',
+    url: 'https://faisalprady.vercel.app/',
+    fullImage: true,
+    techStack: ['Next.js', 'React', 'Typescript', 'Shadcn/ui', 'Magic UI'],
+  },
+  {
     title: 'Train Information System',
     description:
       'Fullstack app. A passenger information system for S-Bahn accross Germany. The system allows the data about disruptions and alternative routes to be sent directly to the information systems in the trains and the train stations.',
@@ -61,7 +72,8 @@ export const projectData: ProjectEntry[] = [
       'Development of a React-based frontend and Drupal-based backend. Including integration of newsletters based on Azure and Sendgrid.',
     extraDesc: 'Professional project during work at Gravity & Storm GmbH',
     role: 'Frontend Developer',
-    image: '/images/gom-zeiss.jpg',
+    image: '/images/handsonmetrology.png',
+    fullImage: true,
     url: 'https://www.handsonmetrology.com/',
     techStack: [
       'Next.js',

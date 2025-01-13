@@ -6,7 +6,7 @@ export const timelineData: TimelineEntry[] = [
     organization: 'Gravity and Storm GmbH',
     date: '09/2020 - 06/2024',
     description:
-      'Fullstack web developer in a Digital Agency, building various products from a complex SPAs to fullstack web applications.',
+      'Fullstack web developer in a Digital Agency, building various products from a sophisticated SPAs to complex fullstack web applications.',
     type: TimelineType.WORK,
   },
   {
@@ -17,7 +17,7 @@ export const timelineData: TimelineEntry[] = [
     type: TimelineType.WORK,
   },
   {
-    title: 'XR Engineer (Internship)',
+    title: 'XR (VR & AR) Engineer (Internship)',
     organization: 'Vonderlabs UG',
     date: '03/2018 - 08/2018',
     description:
