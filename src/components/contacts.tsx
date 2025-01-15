@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Contacts = () => {
@@ -31,9 +32,16 @@ const Contacts = () => {
           </a>
         </div>
       </div>
-      <div className="flex justify-between gap-4 px-12 text-xs">
-        <div>© Muhammad Faisal Ibnu Prady {new Date().getFullYear()}</div>
-        <div>faisalpady@gmail.com</div>
+      <div className="flex flex-wrap flex-col md:flex-row justify-between items-center w-full gap-4 px-6 text-xs">
+        <div className="w-full md:w-1/4 text-center">
+          © Muhammad Faisal Ibnu Prady {new Date().getFullYear()}
+        </div>
+        <div className="w-full md:w-1/4 text-center">
+          <Link href="/privacy" className="text-center">
+            Privacy Policy
+          </Link>
+        </div>
+        <div className="w-full md:w-1/4 text-center">faisalpady@gmail.com</div>
       </div>
     </div>
   );

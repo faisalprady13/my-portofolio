@@ -10,8 +10,8 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: 'Faisal Prady Website',
-  description: 'Portfolio website of Muhammad Faisal Ibnu Prady',
+  title: 'Faisal Prady',
+  description: 'Portfolio of Muhammad Faisal Ibnu Prady',
 };
 
 export default function RootLayout({
