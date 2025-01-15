@@ -10,7 +10,14 @@ export const projectData: ProjectEntry[] = [
     image: '/images/portfolio.png',
     url: 'https://faisalprady.vercel.app/',
     fullImage: true,
-    techStack: ['Next.js', 'React', 'Typescript', 'Shadcn/ui', 'Magic UI'],
+    techStack: [
+      'Next.js',
+      'React',
+      'Typescript',
+      'Shadcn/ui',
+      'Magic UI',
+      'Tailwind',
+    ],
   },
   {
     title: 'Train Information System',
