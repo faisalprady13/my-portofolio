@@ -26,7 +26,7 @@ const Story = () => {
             have worked on multiple projects in various industries. I earned my
             Bachelor&apos;s of Computer Science Degree from HTW Berlin in 2019
             where I studied International Media and Computing. From there on, I
-            worked as a fulltime developer on a Digital Agency in Berlin called
+            worked as a full-time developer on a Digital Agency in Berlin called
             Gravity & Storm.
             <br />
             <br />I specialize in developing sophisticated single-page
