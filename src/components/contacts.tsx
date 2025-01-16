@@ -34,7 +34,7 @@ const Contacts = () => {
       </div>
       <div className="flex flex-wrap flex-col md:flex-row justify-between items-center w-full gap-4 px-6 text-xs">
         <div className="w-full md:w-1/4 text-center">
-          © Muhammad Faisal Ibnu Prady {new Date().getFullYear()}
+          {`© 2024-${new Date().getFullYear()} Muhammad Faisal Ibnu Prady`}
         </div>
         <div className="w-full md:w-1/4 text-center">
           <Link href="/privacy" className="text-center">
