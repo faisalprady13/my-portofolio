@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://faisalprady.vercel.app/sitemap.xml
