@@ -22,12 +22,15 @@ const Story = () => {
           <p className="text-base">
             Greetings, I&apos;m Faisal! I have been a
             <span className="text-primary">{` Fullstack Developer `}</span>
-            for nearly <span className="text-primary">{` 4 years `}</span>and
+            for nearly <span className="text-primary">{` 5 years `}</span>and
             have worked on multiple projects in various industries. I earned my
             Bachelor&apos;s of Computer Science Degree from HTW Berlin in 2019
             where I studied International Media and Computing. From there on, I
-            worked as a full-time developer on a Digital Agency in Berlin called
-            Gravity & Storm.
+            worked as a full-time developer on a Digital Agency in Berlin called{' '}
+            <strong>Gravity & Storm</strong> for almost 4 Years, and later
+            joined <strong>Arbolitics</strong>, a farm analytics company that
+            leverages data and machine learning to provide insights for the
+            agricultural sector.
             <br />
             <br />I specialize in developing sophisticated single-page
             applications (SPAs) and building robust, full-stack applications

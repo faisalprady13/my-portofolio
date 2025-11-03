@@ -2,6 +2,48 @@ import { ProjectEntry } from '@/types/projectTypes';
 
 export const projectData: ProjectEntry[] = [
   {
+    title: 'Arbolitics Website',
+    description: `Designed and developed the company’s main website with multilingual support (English and Spanish).`,
+    extraDesc: 'Professional project during work at Arbolitics GmbH',
+    role: 'Frontend Developer',
+    image: '/images/arbolitics_website.png',
+    url: 'https://www.arbolitics.com/',
+    fullImage: true,
+    techStack: [
+      'Next.js',
+      'React',
+      'Typescript',
+      'Shadcn/ui',
+      'Tailwind',
+      'I18Nexus',
+      'react-i18next',
+    ],
+  },
+  {
+    title: 'Finance Arbolitics',
+    description:
+      'Data-driven farm analytics platform that helps farmers, banks, and investors assess farm performance and potential using machine learning insights. The platform includes authentication and internationalization features.',
+    extraDesc: 'Professional project during work at Arbolitics GmbH',
+    role: 'Frontend Developer',
+    image: '/images/gcm_app_map.webp',
+    url: 'https://finance.arbolitics.com/',
+    fullImage: true,
+    techStack: [
+      'Next.js',
+      'React',
+      'Typescript',
+      'Shadcn/ui',
+      'Tailwind',
+      'Zustand',
+      'Auth.js',
+      'Leaflet map',
+      'Jest',
+      'Playwright',
+      'I18Nexus',
+      'react-i18next',
+    ],
+  },
+  {
     title: 'Portfolio Website',
     description:
       'Server side rendered personal portfolio, built using the latest version of NextJS and Shadcn/ui to showcase my skills and experience. The website has wonderful animation without costing the performance of the website.',

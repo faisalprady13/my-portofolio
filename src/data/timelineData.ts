@@ -2,6 +2,14 @@ import { TimelineEntry, TimelineType } from '@/types/timelineTypes';
 
 export const timelineData: TimelineEntry[] = [
   {
+    title: 'Frontend Engineer',
+    organization: 'Arbolitics GmbH',
+    date: '03/2025 - 11/2025',
+    description:
+      'Frontend development for a data-driven farm analytics platform powered by weather, soil, and other machine learning insights.',
+    type: TimelineType.WORK,
+  },
+  {
     title: 'Full Stack Web Developer',
     organization: 'Gravity and Storm GmbH',
     date: '09/2020 - 06/2024',
